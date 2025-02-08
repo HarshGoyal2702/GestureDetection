@@ -131,7 +131,7 @@ function App() {
             alignItems: "center"
           }}>
             <div style={{ position: "absolute", right: 10, top: 100,width:"100px" }}>
-              <img src={image} style={{width:"100%"}} alt="detected Image" />
+              <img src={image} style={{width:"100%"}} />
             </div>
 
             {
