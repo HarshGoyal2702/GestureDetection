@@ -1,11 +1,12 @@
 # Hand Gesture Detection React App
 
-This project is a **Hand Gesture Detection** React application that utilizes TensorFlow.js and the HandPose model to detect hand gestures. When the model detects a hand, it recognizes the numbers **1, 2, 3, 4, and 5** and displays the corresponding image on the window.
+This project is a **Hand Gesture Detection** React application that utilizes TensorFlow.js and the HandPose model to detect hand gestures. When the model detects a hand, it recognizes the numbers **1, 2, 3, 4, and 5** and displays the corresponding image on the camera feed.
 
 ## Features
 - **Real-time Hand Gesture Detection** using TensorFlow.js
 - **Finger Gesture Recognition** for numbers 1 to 5
 - **Webcam Integration** for live video input
+- **Switch Camera Option** (Switch between front and back camera, with a message if no back camera is available)
 - **Custom Gesture Definitions** using Fingerpose
 - **React.js & Vite** for a fast and efficient development environment
 
@@ -47,7 +48,8 @@ This app uses **TensorFlow.js** and **HandPose** for hand tracking:
 1. The app initializes the **HandPose Model** using TensorFlow.js.
 2. It accesses the webcam feed and processes each frame.
 3. The model detects the **hand landmarks** and sends them to **Fingerpose** for gesture recognition.
-4. If the detected gesture matches **1, 2, 3, 4, or 5**, the corresponding number image is displayed on the screen.
+4. If the detected gesture matches **1, 2, 3, 4, or 5**, the corresponding number image is displayed on the camera.
+5. Users can **switch the camera** between front and back. If a back camera is not available, a message will be displayed.
 
 ## Project Structure
 ```bash
@@ -67,13 +69,14 @@ This app uses **TensorFlow.js** and **HandPose** for hand tracking:
 - Improve gesture recognition accuracy.
 - Add support for custom gestures.
 - Implement audio feedback for detected gestures.
+- Enhance UI for better user experience.
 
 ## 📷 How It Works
 1. The app accesses your **webcam** to track your hand.
 2. The **TensorFlow.js model** detects the hand landmarks.
 3. A gesture recognition algorithm maps the detected landmarks to a **number (1-5)**.
 4. The app displays an image corresponding to the detected number.
-
+5. A **switch camera** option allows toggling between the front and back camera. If no back camera is available, a message is displayed.
 
 ## 📩 Contact
 For any queries, feel free to reach out!
